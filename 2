@@ -1,0 +1,24 @@
+public class TP12 {
+    public static void main(String[] args) {
+       for (int num=50;num<=100;num++) {
+            int cont=0;
+            for (int i=1;i<=num;i++) {
+                if (num%i==0) {
+                    cont++;
+                }
+            }
+            if (cont==2) {
+                System.out.println(num + " es primo\n");
+            } 
+            else {
+                System.out.print("Los divisores del numero " + num + " son: ");
+                for (int i=1;i<num;i++) { 
+                    if (num%i==0) {
+                        System.out.print(i + " ");
+                    }
+                }
+                System.out.println("\n");
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+public class TP1 {
+    public static void main(String[] args){
+        int[] notas = {10, 2, 7, 4, 9};
+
+        /*Se usa para recorrer especificamente un array, en este caso "notas"*/
+        for (int nota : notas) {
+            System.out.println(nota);
+        } /*se declara una variable nota para reiterar en el ciclo sobre el valor del array actual*/
+    }
+}

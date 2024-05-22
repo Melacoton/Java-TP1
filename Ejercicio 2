@@ -1,4 +1,4 @@
-public class TP12 {
+public class TP1 {
     public static void main(String[] args) {
        for (int num=50;num<=100;num++) {
             int cont=0;

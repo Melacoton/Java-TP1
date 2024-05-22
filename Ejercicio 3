@@ -1,0 +1,36 @@
+
+import java.util.Scanner;
+
+public class TP12 {
+    public static void main(String[] args) {
+        boolean opcion = true;
+        int cont=0;
+        int i;
+         Scanner scanner = new Scanner(System.in);
+         do{
+             System.out.println("Ingrese un numero:");
+             int num = scanner.nextInt();
+             boolean esPrimo=false;
+             
+             if(num>=100){
+                  cont=0;
+                     for (i=1;i<=num;i++) {
+                         if (num%i==0) {
+                             cont++;
+                             esPrimo = true;
+                }
+            }
+            if (esPrimo=true) {
+                    System.out.println(num + " Numero invalido: es primo y mayor a 100");
+                    opcion=false;
+                 }
+            
+            }
+            
+             else{
+                System.out.println("El numero " + num + " es valido");
+            }
+             }while(opcion!=false);
+           scanner.close(); 
+}
+}       

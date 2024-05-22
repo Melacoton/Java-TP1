@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class TP12 {
+public class TP1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int cant=0;
@@ -98,6 +96,11 @@ public class TP12 {
                     salir = true;
                     break;
         }
+    } while (!salir);
+        scanner.close();
+}
+}
+
     } while (!salir);
 
         scanner.close();

@@ -1,0 +1,105 @@
+import java.util.Scanner;
+
+public class TP12 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int cant=0;
+        int suma=0, resta=0, multi=0, div=0; 
+        boolean salir=false;
+        do {
+            System.out.println("1.Sumar numeros");
+            System.out.println("2.Restar numeros");
+            System.out.println("3.Multiplicar numeros");
+            System.out.println("4.Dividir numeros");
+            System.out.println("5.Salir del programa");
+            System.out.println("Elija una opcion: ");
+            int opcion=scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    suma=0;
+                    System.out.println("Ingrese la cantidad de numeros que desea sumar: ");
+                    cant = scanner.nextInt();
+                    int[] numeroSuma = new int[cant];
+                    
+                    for (int i=0;i<cant;i++) {
+                        System.out.println("Ingrese numero: ");
+                        numeroSuma[i]=scanner.nextInt();
+                        suma += numeroSuma[i];
+                    }
+
+                    System.out.println("La suma de los numeros es: " + suma);
+                    System.out.println("\n");
+                    break;
+
+                case 2:
+                    resta=0;
+                    System.out.println("Ingrese la cantidad de numeros que desea restar: ");
+                    cant = scanner.nextInt();
+                    int[] numeroResta = new int[cant];
+                   
+                    System.out.println("Ingrese numero: ");
+                    numeroResta[0] = scanner.nextInt();
+                    resta = numeroResta[0];
+                   
+                    for (int i=1;i<cant;i++) {
+                        System.out.println("Ingrese numero: ");
+                        numeroResta[i] = scanner.nextInt();
+                        resta -= numeroResta[i];
+                    }
+                    
+                    System.out.println("La resta de los numeros es: " + resta);
+                    System.out.println("\n");
+                    break;
+
+                case 3:
+                    multi=0;
+                    System.out.println("Ingrese la cantidad de numeros que desea multiplicar: ");
+                    cant = scanner.nextInt();
+                    
+                    int[] numeroMulti = new int[cant];
+                    
+                    System.out.println("Ingrese numero: ");
+                    numeroMulti[0] = scanner.nextInt();
+                    multi = numeroMulti[0];
+                    
+                    for (int i=1;i<cant;i++) {
+                        System.out.println("Ingrese numero: ");
+                        numeroMulti[i] = scanner.nextInt();
+                        multi *= numeroMulti[i];
+                    }
+
+                    System.out.println("La multiplicacion de los numeros es: " + multi);
+                    System.out.println("\n");
+                    break;
+
+                case 4:
+                    div=0;
+                    System.out.println("Ingrese la cantidad de numeros que desea dividir: ");
+                    cant = scanner.nextInt();
+                    
+                    int[] numeroDiv = new int[cant];
+                    
+                    System.out.println("Ingrese numero: ");
+                    numeroDiv[0] = scanner.nextInt();
+                    div = numeroDiv[0];
+                    
+                    for (int i=1;i<cant;i++) {
+                        System.out.println("Ingrese numero: ");
+                        numeroDiv[i] = scanner.nextInt();
+                            div /= numeroDiv[i];
+                    }
+
+                    System.out.println("La division de los numeros es: " + div);
+                    System.out.println("\n");
+                    break;
+
+                case 5:
+                    salir = true;
+                    break;
+        }
+    } while (!salir);
+
+        scanner.close();
+}
+}

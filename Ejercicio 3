@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 
-public class TP12 {
+public class TP1 {
     public static void main(String[] args) {
         boolean opcion = true;
         int cont=0;
@@ -34,3 +33,4 @@ public class TP12 {
            scanner.close(); 
 }
 }       
+
